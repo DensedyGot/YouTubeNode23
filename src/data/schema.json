@@ -1,0 +1,53 @@
+{
+  "artists": [{
+      "channelName": "BANGTANTV",
+      "channelArtist": {
+        "Artist": "BTS",
+        "Views": 23,
+        "Average": 23,
+        "Count": 34,
+        "ChannelLogo": "http://",
+        "BannerURL": "http://",
+        "Videos": [{
+            "Title": "On",
+            "Views": 345,
+            "Published": "March",
+            "VideoURL": "http"
+          },
+          {
+            "Title": "Boy with",
+            "Views": 345,
+            "Average": 24,
+            "Published": "March",
+            "VideoURL": "http"
+          }
+        ]
+      }
+    },
+    {
+      "channelName": "BLINK",
+      "channelArtist": {
+        "Artist": "Blackpink",
+        "Views": 23,
+        "Average": 23,
+        "Count": 34,
+        "ChannelLogo": "http://",
+        "BannerURL": "http://",
+        "Videos": [{
+            "Title": "DDU",
+            "Views": 345,
+            "Published": "March",
+            "VideoURL": "http"
+          },
+          {
+            "Title": "Kill",
+            "Views": 345,
+            "Average": 24,
+            "Published": "March",
+            "VideoURL": "http"
+          }
+        ]
+      }
+    }
+  ]
+}

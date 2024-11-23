@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/5101009e-8b23-484d-b1ad-0cededf7e559/resourceGroups/kpopyoutubewebgroup/providers/Microsoft.Web/sites/kpopyoutube",
+    "appService.deploySubpath": "build"
+}
