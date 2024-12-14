@@ -30,14 +30,14 @@
     "debut": "Saturday, 19 August 2006"
   },
   {
-    "channelID": "UCfkXDY7vwkcJ8ddFGz8KusA",
-    "artist": "SEVENTEEN",
-    "debut": "Tuesday, 26 May 2015"
-  },
-  {
     "channelID": "UCBo1hnzxV9rz3WVsv__Rn1g",
     "artist": "Rosé",
     "debut": "Monday, 8 August 2016"
+  },
+  {
+    "channelID": "UCfkXDY7vwkcJ8ddFGz8KusA",
+    "artist": "SEVENTEEN",
+    "debut": "Tuesday, 26 May 2015"
   },
   {
     "channelID": "UCNYi_zGmR519r5gYdOKLTjQ",
@@ -310,6 +310,11 @@
     "debut": "Monday, 20 August 2018"
   },
   {
+    "channelID": "UCEpFoWeCMCo5z3EvWaz6hQQ",
+    "artist": "ILLIT",
+    "debut": "Monday, 25 March 2024"
+  },
+  {
     "channelID": "UCDJnRpq0DnQhrwi1ruuQa7g",
     "artist": "Taeyang",
     "debut": "Saturday, 19 August 2006"
@@ -318,11 +323,6 @@
     "channelID": "UC2tfQfxl_wmAosF4ES_zULw",
     "artist": "Hyeri",
     "debut": "Friday, 29 October 2010"
-  },
-  {
-    "channelID": "UCEpFoWeCMCo5z3EvWaz6hQQ",
-    "artist": "ILLIT",
-    "debut": "Monday, 25 March 2024"
   },
   {
     "channelID": "UCJEER74X9kBenMT_x9iK9Mw",
@@ -470,14 +470,14 @@
     "debut": "Thursday, 24 May 2012"
   },
   {
-    "channelID": "UCHs6VoM3HaRxaRlnvdtzDZQ",
-    "artist": "A.C.E",
-    "debut": "Friday, 4 August 2017"
-  },
-  {
     "channelID": "UCZzpLKZPTSNNycp-qQc2kLw",
     "artist": "8TURN",
     "debut": "Monday, 30 January 2023"
+  },
+  {
+    "channelID": "UCHs6VoM3HaRxaRlnvdtzDZQ",
+    "artist": "A.C.E",
+    "debut": "Friday, 4 August 2017"
   },
   {
     "channelID": "UCZlgP_2MRnrPXRmqR5320BQ",
@@ -515,14 +515,14 @@
     "debut": "Monday, 6 December 2021"
   },
   {
-    "channelID": "UClOZoLNwJVdNzkEhzeevBSA",
-    "artist": "Zico",
-    "debut": "Thursday, 23 June 2011"
-  },
-  {
     "channelID": "UCgD0APk2x9uBlLM0UsmhQjw",
     "artist": "QWER",
     "debut": "Wednesday, 18 October 2023"
+  },
+  {
+    "channelID": "UClOZoLNwJVdNzkEhzeevBSA",
+    "artist": "Zico",
+    "debut": "Thursday, 23 June 2011"
   },
   {
     "channelID": "UC-qYkzKFdekoEniRu_FS3zg",
@@ -785,6 +785,11 @@
     "debut": "Wednesday, 30 December 2020"
   },
   {
+    "channelID": "UCWFMjDuWKlct0jy89k2kkRA",
+    "artist": "VIVIZ",
+    "debut": "Wednesday, 9 February 2022"
+  },
+  {
     "channelID": "UCi00aT1kuoR7QNa45Xnwd7Q",
     "artist": "FT ISLAND",
     "debut": "Thursday, 7 June 2007"
@@ -793,11 +798,6 @@
     "channelID": "UCspnElmzSLPhrZJDG9v7JWw",
     "artist": "UNIS",
     "debut": "Wednesday, 27 March 2024"
-  },
-  {
-    "channelID": "UCWFMjDuWKlct0jy89k2kkRA",
-    "artist": "VIVIZ",
-    "debut": "Wednesday, 9 February 2022"
   },
   {
     "channelID": "UCfmfKNecIMYD_40MWcds5WQ",
@@ -865,6 +865,11 @@
     "debut": "Wednesday, 28 October 2020"
   },
   {
+    "channelID": "UCowiwt93gqGlNG4k5VDxO-w",
+    "artist": "MEOVV",
+    "debut": "Friday, 6 September 2024"
+  },
+  {
     "channelID": "UCwytna6i1rFCt13a3Qvuk-A",
     "artist": "AB6IX",
     "debut": "Wednesday, 22 May 2019"
@@ -873,11 +878,6 @@
     "channelID": "UCEOrsZx2jtJMT-RAvTa-fPA",
     "artist": "Woosung",
     "debut": "Wednesday, 2 August 2017"
-  },
-  {
-    "channelID": "UCowiwt93gqGlNG4k5VDxO-w",
-    "artist": "MEOVV",
-    "debut": "Friday, 6 September 2024"
   },
   {
     "channelID": "UCpIQ_PHkivL2HHWfdgO-Urw",
@@ -895,14 +895,19 @@
     "debut": "Wednesday, 2 March 2022"
   },
   {
-    "channelID": "UCnXuSso6ypX2NVrl8_2TwfQ",
-    "artist": "Hong Jin Young",
-    "debut": "Tuesday, 10 July 2007"
-  },
-  {
     "channelID": "UCkrDEGNM3mqZXHk2MfnOjMw",
     "artist": "Yena",
     "debut": "Monday, 29 October 2018"
+  },
+  {
+    "channelID": "UCfbYNlxgLuKJXQZEhkMmaCQ",
+    "artist": "izna",
+    "debut": "Monday, 25 November 2024"
+  },
+  {
+    "channelID": "UCnXuSso6ypX2NVrl8_2TwfQ",
+    "artist": "Hong Jin Young",
+    "debut": "Tuesday, 10 July 2007"
   },
   {
     "channelID": "UC8vm0EzlH9mRHwnTLILpQjQ",
@@ -933,11 +938,6 @@
     "channelID": "UCrpM65if0cKlKiMdO_7nxUw",
     "artist": "Lucas",
     "debut": "Sunday, 18 February 2018"
-  },
-  {
-    "channelID": "UCfbYNlxgLuKJXQZEhkMmaCQ",
-    "artist": "izna",
-    "debut": "Monday, 25 November 2024"
   },
   {
     "channelID": "UCPnd5rMdGyhvsXjY9f8DVeg",
@@ -1090,14 +1090,14 @@
     "debut": "Monday, 20 June 2022"
   },
   {
-    "channelID": "UCPJ4MfslU2tjw1a8X-0VuVw",
-    "artist": "UP10TION",
-    "debut": "Thursday, 10 September 2015"
-  },
-  {
     "channelID": "UCtC14nS1y4T54RJMk4t08Uw",
     "artist": "Chungha",
     "debut": "Friday, 7 July 2017"
+  },
+  {
+    "channelID": "UCPJ4MfslU2tjw1a8X-0VuVw",
+    "artist": "UP10TION",
+    "debut": "Thursday, 10 September 2015"
   },
   {
     "channelID": "UCz39fXOBeGVe6OGUUL6v7Og",
@@ -1275,14 +1275,14 @@
     "debut": "Thursday, 27 July 2017"
   },
   {
-    "channelID": "UCop_-8RXaAEpatMq7scX_Gg",
-    "artist": "Ha Sung Woon",
-    "debut": "Wednesday, 29 October 2014"
-  },
-  {
     "channelID": "UCbTzy8kj_6Kik_LFD1XyN5g",
     "artist": "Loossemble",
     "debut": "Friday, 15 September 2023"
+  },
+  {
+    "channelID": "UCop_-8RXaAEpatMq7scX_Gg",
+    "artist": "Ha Sung Woon",
+    "debut": "Wednesday, 29 October 2014"
   },
   {
     "channelID": "UCtF9Njo6rLI8U2ZrJ_cFzHQ",
@@ -1445,6 +1445,11 @@
     "debut": "Thursday, 28 August 2014"
   },
   {
+    "channelID": "UCh0KpQuSJ9m0DaENZmnYwzw",
+    "artist": "BADVILLAIN",
+    "debut": "Monday, 3 June 2024"
+  },
+  {
     "channelID": "UCpjRrRDaEdAQK311HQJYsrw",
     "artist": "M.O.N.T",
     "debut": "Friday, 4 January 2019"
@@ -1453,11 +1458,6 @@
     "channelID": "UCVE2m6JfuhSu6dHzB_IzpFA",
     "artist": "CSR",
     "debut": "Wednesday, 27 July 2022"
-  },
-  {
-    "channelID": "UCh0KpQuSJ9m0DaENZmnYwzw",
-    "artist": "BADVILLAIN",
-    "debut": "Monday, 3 June 2024"
   },
   {
     "channelID": "UCeJi6SfLR6iZvfmWk5SIrYQ",
@@ -1485,11 +1485,6 @@
     "debut": "Thursday, 26 October 2017"
   },
   {
-    "channelID": "UCAiJ79gAil8t-Vbn9LnMJzw",
-    "artist": "Natty",
-    "debut": "Thursday, 7 May 2020"
-  },
-  {
     "channelID": "UCtKtCiaWRz-d3EZn2xd1mdA",
     "artist": "RESCENE",
     "debut": "Tuesday, 26 March 2024"
@@ -1500,14 +1495,19 @@
     "debut": "Wednesday, 17 January 2024"
   },
   {
-    "channelID": "UCAi-amA4-tpCMlKi6PdmGEA",
-    "artist": "Boys Republic",
-    "debut": "Wednesday, 5 June 2013"
+    "channelID": "UCAiJ79gAil8t-Vbn9LnMJzw",
+    "artist": "Natty",
+    "debut": "Thursday, 7 May 2020"
   },
   {
     "channelID": "UCb7q-fXh21T-pq02dC9H3xg",
     "artist": "ONE PACT",
     "debut": "Thursday, 30 November 2023"
+  },
+  {
+    "channelID": "UCAi-amA4-tpCMlKi6PdmGEA",
+    "artist": "Boys Republic",
+    "debut": "Wednesday, 5 June 2013"
   },
   {
     "channelID": "UCDdqxnt7CBryockG3DLAHug",
@@ -1555,14 +1555,14 @@
     "debut": "Thursday, 9 September 2021"
   },
   {
-    "channelID": "UCwqwjHeZgPP8lgjvcOTVazQ",
-    "artist": "Imfact",
-    "debut": "Wednesday, 27 January 2016"
-  },
-  {
     "channelID": "UCXVCWwthUVgO4ledMbcKANQ",
     "artist": "Onew",
     "debut": "Sunday, 25 May 2008"
+  },
+  {
+    "channelID": "UCwqwjHeZgPP8lgjvcOTVazQ",
+    "artist": "Imfact",
+    "debut": "Wednesday, 27 January 2016"
   },
   {
     "channelID": "UChF7Gn3fsJFUPArG8jy0V9g",
