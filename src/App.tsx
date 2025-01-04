@@ -25,7 +25,7 @@ const stackStyles: Partial<IStackStyles> = {
   },
 };
 
-const lastUpdate: Date = new Date("December 29, 2024 12:00 AM +8");
+const lastUpdate: Date = new Date("January 5, 2025 12:00 AM +8");
 const videoItemsViews: IVideoItems[] = [];
 
 initializeIcons();
@@ -73,6 +73,15 @@ export const App: React.FunctionComponent = () => {
             preferMenuTargetAsEventTarget: true,
             onClick: (ev, item) => {
               SetNavState("TrendingAllTime")
+            }
+          },
+          {
+            key: 'trending2024',
+            text: 'Trending 2024',
+            iconProps: { iconName: 'DateTime', styles: iconStyles },
+            preferMenuTargetAsEventTarget: true,
+            onClick: (ev, item) => {
+              SetNavState("Trending2024")
             }
           },
           {
@@ -191,6 +200,15 @@ export const App: React.FunctionComponent = () => {
             preferMenuTargetAsEventTarget: true,
             onClick: (ev, item) => {
               SetNavState("ArtistTrendingAllTime")
+            }
+          },
+          {
+            key: 'artistTrending2024',
+            text: 'Trending 2024',
+            iconProps: { iconName: 'DateTime', styles: iconStyles },
+            preferMenuTargetAsEventTarget: true,
+            onClick: (ev, item) => {
+              SetNavState("ArtistTrending2024")
             }
           },
           {
@@ -323,6 +341,11 @@ export const App: React.FunctionComponent = () => {
         <YouTubeVideosYTDAlltimeTrend
           lastUpdate={lastUpdate}
         />}
+      {(navState === "Trending2024") &&
+        <YouTubeVideosYear
+          lastUpdate={lastUpdate}
+          year={2024}
+        />}
       {(navState === "Trending2023") &&
         <YouTubeVideosYear
           lastUpdate={lastUpdate}
@@ -380,6 +403,11 @@ export const App: React.FunctionComponent = () => {
       {(navState === "ArtistTrendingAllTime") &&
         <YouTubeArtistAlltimeTrending
           lastUpdate={lastUpdate}
+        />}
+      {(navState === "ArtistTrending2024") &&
+        <YouTubeArtistYear
+          lastUpdate={lastUpdate}
+          year={2024}
         />}
       {(navState === "ArtistTrending2023") &&
         <YouTubeArtistYear
