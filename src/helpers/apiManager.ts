@@ -24,7 +24,7 @@ export class apiManager {
         /**Update the Channel in the database */
         await this.dbManager.updateChannel(newdatabase, channelObject, artist, debutDate).then(async (newdatabase: any) => {
           /**Get the Playlists in each Channel */
-          const playListIDs: string[] = [];
+          let playListIDs: string[] = [];
           let i: number = 0;
           let nextPageToken: string = "";
           let noPlaylist: number = 0;
@@ -62,7 +62,7 @@ export class apiManager {
                     && playlist.id !== "XXXXXXXXXXXXXXXXXXXXX"
                     && playlist.id !== "XXXXXXXXXXXXXXXXXX"
                     && artist === "XXXXXXXXXXXXXXXX") return;
-                  playListIDs.push(playlist.id);
+                  else playListIDs.push(playlist.id);
                 });
                 if (!playlistObject.data.nextPageToken) {
                   nextPageToken = ""
@@ -75,6 +75,11 @@ export class apiManager {
             }
           }
 
+          /**Explicit Playlist for Artist */
+          if (channelID === "UCNYi_zGmR519r5gYdOKLTjQ" && artist === "Jennie"){
+            playListIDs = [];
+            playListIDs.push("OLAK5uy_n1UA7cqk32kt_D1bNl5lT_D_976CQ-m8s");
+        }
           console.log("Number of Playlist for " + artist + " " + playListIDs.length);
           /**Get the videos in each playlist Items*/
           const videosIDs: string[] = [];
