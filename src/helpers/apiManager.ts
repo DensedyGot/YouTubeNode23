@@ -76,13 +76,19 @@ export class apiManager {
           }
 
           /**Explicit Playlist for Artist */
-          if (channelID === "UCNYi_zGmR519r5gYdOKLTjQ" && artist === "Jennie"){
-            playListIDs = [];
-            playListIDs.push("OLAK5uy_n1UA7cqk32kt_D1bNl5lT_D_976CQ-m8s");
-        }
+          if (channelID === "UCNYi_zGmR519r5gYdOKLTjQ" && artist === "Jennie") {
+            //playListIDs = [];
+            //playListIDs.push("OLAK5uy_n1UA7cqk32kt_D1bNl5lT_D_976CQ-m8s");
+          }
           console.log("Number of Playlist for " + artist + " " + playListIDs.length);
           /**Get the videos in each playlist Items*/
           const videosIDs: string[] = [];
+
+          /**Explicit Videos for Artist */
+          if (channelID === "UCNYi_zGmR519r5gYdOKLTjQ" && artist === "Jennie") {
+            videosIDs.push("23urWKmHS6o");
+            videosIDs.push("cXmYNmQ4BuM");
+          }
           let b: number = 0;
           const acceptedDate: Date = new Date();
           acceptedDate.setDate(acceptedDate.getDate() - 8);
