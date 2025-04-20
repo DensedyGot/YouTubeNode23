@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontWeights, IStackTokens, IStackStyles, ITextStyles, initializeIcons } from '@fluentui/react';
 import { FluentProvider, webLightTheme, Button } from "@fluentui/react-components";
 import './App.css';
 import { CommandBar, ICommandBarItemProps, IIconStyles, Image, Label } from '@fluentui/react';
 import './components/customstyling.css';
+import { ApplicationInsights } from '@microsoft/applicationinsights-web';
 import { IVideoItems } from './components/IYouTube';
 import YouTubeVideosYear from './components/videos/YouTubeVideosYear';
 import YouTubeVideosTrending from './components/videos/YouTubeVideosTrending';
@@ -25,7 +26,7 @@ const stackStyles: Partial<IStackStyles> = {
   },
 };
 
-const lastUpdate: Date = new Date("April 6, 2025 12:00 AM +8");
+const lastUpdate: Date = new Date("April 20, 2025 12:00 AM +8");
 const videoItemsViews: IVideoItems[] = [];
 
 initializeIcons();
@@ -40,6 +41,23 @@ const iconStyles: IIconStyles = {
 
 export const App: React.FunctionComponent = () => {
   const [navState, SetNavState] = useState<string | undefined>(undefined);
+  
+  useEffect(() => {
+    appInsights.loadAppInsights();
+    appInsights.trackPageView();
+    // Optionally, return a cleanup function (like componentWillUnmount)
+    return () => {
+      //console.log('Component unmounted');
+    };
+
+  }, []);
+ 
+  const appInsights = new ApplicationInsights({
+    config: {
+      instrumentationKey: 'fd8c3469-528a-45bf-983f-545494c3bfc9',
+      enableAutoRouteTracking: true
+    }
+  });
   const _items: ICommandBarItemProps[] = [
     {
       key: 'musicVideos',

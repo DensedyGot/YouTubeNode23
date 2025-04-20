@@ -53,7 +53,7 @@ export class DataParser {
       let average: number = 0;
       let trendViews: number = 0;
       let videosCount: number = 0;
-      const dateYesteryear: Date = new Date("April 6, 2024 12:00 AM +8");
+      const dateYesteryear: Date = new Date("April 20, 2024 12:00 AM +8");
       channel.channelArtist.videos.map((video: any) => {
         if (new Date((new Date(video.published)).toUTCString()) >= dateYesteryear) {
           views = views + video.views;
@@ -365,10 +365,10 @@ export class DataParser {
 
   public getVideoItemsByTrending = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("April 6, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("April 20, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     for (let i = 0; i < videoItems.length; i++) {
-      const a: any = moment(new Date("April 6, 2025 12:00 AM +8"));
+      const a: any = moment(new Date("April 20, 2025 12:00 AM +8"));
       let publishedDate: Date = new Date(videoItems[i].publishedDate);
       publishedDate = new Date(publishedDate.toUTCString());
       const b: any = moment(publishedDate);
@@ -398,7 +398,7 @@ export class DataParser {
 
   public getVideoItemsByTop = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("April 6, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("April 20, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     //videoItems = videoItems.filter((item: IVideoItems) => item.average >= 100000000000);
     videoItems.sort((a, b) => {
@@ -414,7 +414,7 @@ export class DataParser {
 
   public getVideoItemsAverageByTop = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("April 6, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("April 20, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     //videoItems = videoItems.filter((item: IVideoItems) => item.average >= 100000000000);
     videoItems.sort((a, b) => {
@@ -456,7 +456,7 @@ export class DataParser {
 
   public getVideoItemsByInitialYear = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("April 6, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("April 20, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     videoItems.sort((a, b) => {
       return b.views - a.views;

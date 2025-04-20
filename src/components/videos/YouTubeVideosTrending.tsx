@@ -33,6 +33,8 @@ export default class YouTubeVideosTrending extends React.Component<IYouTubeVideo
   private selection: Selection | undefined;
   private apiManager: apiManager = new apiManager();
 
+
+
   constructor(props: IYouTubeVideosProps) {
     super(props);
     this.state = {
