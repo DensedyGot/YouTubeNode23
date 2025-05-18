@@ -26,7 +26,7 @@ const stackStyles: Partial<IStackStyles> = {
   },
 };
 
-const lastUpdate: Date = new Date("April 27, 2025 12:00 AM +8");
+const lastUpdate: Date = new Date("May 18, 2025 12:00 AM +8");
 const videoItemsViews: IVideoItems[] = [];
 
 initializeIcons();
@@ -41,7 +41,7 @@ const iconStyles: IIconStyles = {
 
 export const App: React.FunctionComponent = () => {
   const [navState, SetNavState] = useState<string | undefined>(undefined);
-  
+
   useEffect(() => {
     appInsights.loadAppInsights();
     appInsights.trackPageView();
@@ -51,7 +51,7 @@ export const App: React.FunctionComponent = () => {
     };
 
   }, []);
- 
+
   const appInsights = new ApplicationInsights({
     config: {
       instrumentationKey: 'fd8c3469-528a-45bf-983f-545494c3bfc9',
@@ -325,7 +325,7 @@ export const App: React.FunctionComponent = () => {
   ]
   return (
     <FluentProvider theme={webLightTheme}>
-     {/* <YouTubeAdmin lastUpdate={new Date()}/> */}
+      {/* <YouTubeAdmin lastUpdate={new Date()} /> */}
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         <Image
           // src={"http://localhost:3000/favicon.ico"}
@@ -467,12 +467,12 @@ export const App: React.FunctionComponent = () => {
           lastUpdate={lastUpdate}
           year={2016}
         />}
-              {(navState === "ArtistTrending2015") &&
+      {(navState === "ArtistTrending2015") &&
         <YouTubeArtistYear
           lastUpdate={lastUpdate}
           year={2015}
         />}
-              {(navState === "ArtistTrending2014") &&
+      {(navState === "ArtistTrending2014") &&
         <YouTubeArtistYear
           lastUpdate={lastUpdate}
           year={2014}
