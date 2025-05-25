@@ -26,7 +26,7 @@ const stackStyles: Partial<IStackStyles> = {
   },
 };
 
-const lastUpdate: Date = new Date("May 18, 2025 12:00 AM +8");
+const lastUpdate: Date = new Date("May 25, 2025 12:00 AM +8");
 const videoItemsViews: IVideoItems[] = [];
 
 initializeIcons();
