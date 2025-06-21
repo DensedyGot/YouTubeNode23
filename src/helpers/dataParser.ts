@@ -53,7 +53,7 @@ export class DataParser {
       let average: number = 0;
       let trendViews: number = 0;
       let videosCount: number = 0;
-      const dateYesteryear: Date = new Date("May 25, 2024 12:00 AM +8");
+      const dateYesteryear: Date = new Date("June 22, 2024 12:00 AM +8");
       channel.channelArtist.videos.map((video: any) => {
         if (new Date((new Date(video.published)).toUTCString()) >= dateYesteryear) {
           views = views + video.views;
@@ -365,10 +365,10 @@ export class DataParser {
 
   public getVideoItemsByTrending = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("May 25, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("June 15, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     for (let i = 0; i < videoItems.length; i++) {
-      const a: any = moment(new Date("May 25, 2025 12:00 AM +8"));
+      const a: any = moment(new Date("June 15, 2025 12:00 AM +8"));
       let publishedDate: Date = new Date(videoItems[i].publishedDate);
       publishedDate = new Date(publishedDate.toUTCString());
       const b: any = moment(publishedDate);
@@ -398,7 +398,23 @@ export class DataParser {
 
   public getVideoItemsByTop = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("May 25, 2024 12:00 AM +8"); //Change this date to asses music to save in disk
+    const dateYesteryear: Date = new Date("June 22, 2024 12:00 AM +8");
+    videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
+    //videoItems = videoItems.filter((item: IVideoItems) => item.average >= 100000000000);
+    videoItems.sort((a, b) => {
+      return b.trendViews - a.trendViews;
+    });
+    let itemOrder: number = 0;
+    videoItems.map((videoItem: any) => {
+      itemOrder++;
+      videoItem.order = itemOrder;
+    })
+    return videoItems.slice(0, 5000);
+  }
+
+  public getVideoItemsByViews = (): IVideoItems[] => {
+    let videoItems: IVideoItems[] = this.getVideoItems();
+    const dateYesteryear: Date = new Date("June 22, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     //videoItems = videoItems.filter((item: IVideoItems) => item.average >= 100000000000);
     videoItems.sort((a, b) => {
@@ -414,7 +430,7 @@ export class DataParser {
 
   public getVideoItemsAverageByTop = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("May 25, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("June 22, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     //videoItems = videoItems.filter((item: IVideoItems) => item.average >= 100000000000);
     videoItems.sort((a, b) => {
@@ -427,6 +443,8 @@ export class DataParser {
     })
     return videoItems.slice(0, 5000);
   }
+
+
 
   public getVideoItemsByAlltimeTrend = (): IVideoItems[] => {
     const videoItems: IVideoItems[] = this.getVideoItems();
@@ -456,7 +474,7 @@ export class DataParser {
 
   public getVideoItemsByInitialYear = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("May 25, 2024 12:00 AM +8");
+    const dateYesteryear: Date = new Date("June 22, 2024 12:00 AM +8");
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     videoItems.sort((a, b) => {
       return b.views - a.views;
@@ -499,22 +517,19 @@ export class DataParser {
     return videoItems;
   }
 
-  public getVideoItemsByViews = (videoItems: IVideoItems[], sorting: boolean): IVideoItems[] => {
-    if (sorting) {
-      videoItems.sort((a, b) => {
-        return b.views - a.views;
-      });
-    } else {
-      videoItems.sort((a, b) => {
-        return a.views - b.views;
-      });
-    }
+  public getVideoItemsByViewsV1 = (): IVideoItems[] => {
+    let videoItems: IVideoItems[] = this.getVideoItems();
+    const dateYesteryear: Date = new Date("December 22, 2024 12:00 AM +8"); //change this
+    videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
+    videoItems.sort((a, b) => {
+      return b.views - a.views;
+    });
     let itemOrder: number = 0;
     videoItems.map((videoItem: any) => {
       itemOrder++;
       videoItem.order = itemOrder;
     })
-    return videoItems;
+    return videoItems.slice(0, 5000);
   }
 
   public getVideoItemsByPublished = (videoItems: IVideoItems[], sorting: boolean): IVideoItems[] => {

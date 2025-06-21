@@ -13,6 +13,7 @@ import YouTubeVideosYTDAlltimeTrend from './components/videos/YouTubeVideosAllti
 import YouTubeArtistAlltimeTrending from './components/artists/YouTubeArtistAlltimeTrending';
 import YouTubeArtistYTDTrending from './components/artists/YouTubeArtistYTDTrending';
 import YouTubeArtistYear from './components/artists/YouTubeArtistYear';
+import YouTubeVideos from './components/videos/YouTubeVideos';
 import YouTubeAdmin from './components/admin/YouTubeAdmin';
 
 const boldStyle: Partial<ITextStyles> = { root: { fontWeight: FontWeights.semibold } };
@@ -26,7 +27,7 @@ const stackStyles: Partial<IStackStyles> = {
   },
 };
 
-const lastUpdate: Date = new Date("May 25, 2025 12:00 AM +8");
+const lastUpdate: Date = new Date("June 22, 2025 12:00 AM +8");
 const videoItemsViews: IVideoItems[] = [];
 
 initializeIcons();
@@ -343,7 +344,11 @@ export const App: React.FunctionComponent = () => {
           farItemsGroupAriaLabel="Menus"
         />
       </div>
-      {(navState === undefined) &&
+      {/* {(navState === undefined) &&
+        <YouTubeVideos
+          lastUpdate={lastUpdate}
+        />} */}
+     {(navState === undefined) &&
         <YouTubeVideosTrending
           lastUpdate={lastUpdate}
         />}
