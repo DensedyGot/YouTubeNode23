@@ -27,7 +27,7 @@ const stackStyles: Partial<IStackStyles> = {
   },
 };
 
-const lastUpdate: Date = new Date("July 27, 2025 12:00 AM +8");
+const lastUpdate: Date = new Date("August 3, 2025 12:00 AM +8");
 const videoItemsViews: IVideoItems[] = [];
 
 initializeIcons();
@@ -348,7 +348,7 @@ export const App: React.FunctionComponent = () => {
         <YouTubeVideos
           lastUpdate={lastUpdate}
         />} */}
-     {(navState === undefined) &&
+      {(navState === undefined) &&
         <YouTubeVideosTrending
           lastUpdate={lastUpdate}
         />}
