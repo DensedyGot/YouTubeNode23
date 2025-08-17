@@ -1,5 +1,5 @@
 import React from 'react';
-import { IArtistItems } from '../IYouTube';
+import { IArtistItems, IVideoItems } from '../IYouTube';
 import {
   IColumn,
   SelectionMode,
@@ -16,6 +16,8 @@ import {
 import { dbManager } from '../../helpers/dbManagerManual';
 import { writeJSON } from '../../helpers/writeJSON';
 import { apiManager } from '../../helpers/apiManager';
+import { Selection } from '@fluentui/react/lib/DetailsList';
+
 
 export interface IYouTubeVideosProps {
   lastUpdate: Date;
@@ -27,7 +29,9 @@ export interface IYouTubeAdminState {
   artistCode: string
   videoList: string
   channelList: string
-
+  videoItems: IVideoItems[];      // +++
+  videoColumns: IColumn[];        // +++
+  loading: boolean;               // +++
 }
 
 export default class YouTubeAdmin extends React.Component<IYouTubeVideosProps, IYouTubeAdminState> {
@@ -35,6 +39,8 @@ export default class YouTubeAdmin extends React.Component<IYouTubeVideosProps, I
   private dbManager = new dbManager();
   private writeJSON = new writeJSON();
   private apiManager = new apiManager();
+  private selection: Selection;
+
 
   constructor(props: IYouTubeVideosProps) {
     super(props);
@@ -43,8 +49,17 @@ export default class YouTubeAdmin extends React.Component<IYouTubeVideosProps, I
       channelID: "",
       playlistID: "",
       artistCode: "",
-      channelList: ""
+      channelList: "",
+      videoItems: [],       // +++
+      videoColumns: [],     // +++
+      loading: true         // +++
     }
+    this.selection = new Selection({
+      onSelectionChanged: () => {
+        // You can handle selection change here if needed
+        console.log(this.selection.getSelection());
+      }
+    });
   }
 
   async componentDidMount() {
@@ -66,6 +81,11 @@ export default class YouTubeAdmin extends React.Component<IYouTubeVideosProps, I
           onClick={this.trimDatabase}
           text={"Click to trim databse"}
         ></PrimaryButton>
+        <PrimaryButton
+          style={{ marginLeft: 10 }}
+          onClick={this.exportSelectedAsJSON}
+          text="Export Selected as JSON"
+        />
         <PrimaryButton
           onClick={this.getArtistsJSONData}
           text={"Click to get artist JSON Data"}
@@ -111,5 +131,26 @@ export default class YouTubeAdmin extends React.Component<IYouTubeVideosProps, I
      */
     this.writeJSON.createJSON(artistsData, `artists.json`)
   }
+
+  private exportSelectedAsJSON = (): void => {
+    const selectedItems = this.selection.getSelection() as IVideoItems[];
+
+    const exportData = selectedItems.map(item => ({
+      artist: item.artist,
+      title: item.title,
+      videoURL: item.videoURL
+    }));
+
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], {
+      type: 'application/json'
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'selected_videos.json';
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
 
 }

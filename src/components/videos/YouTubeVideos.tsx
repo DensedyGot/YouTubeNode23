@@ -97,8 +97,9 @@ export default class YouTubeVideosTrending extends React.Component<IYouTubeVideo
           enableShimmer={loading}
           items={videoItems}
           columns={videoColumns}
-          selectionMode={SelectionMode.none}
+          selectionMode={SelectionMode.multiple}
           selection={this.selection}
+          selectionPreservedOnEmptyClick={true}
         />
       </>
     )
