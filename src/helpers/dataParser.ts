@@ -333,7 +333,7 @@ export class DataParser {
         videoItems.push(videoItem)
       })
     });
-    // console.log("No of videos", videoItems.length); 
+    console.log("No of videos", videoItems.length); 
     return videoItems;
   }
 
@@ -519,7 +519,7 @@ export class DataParser {
 
   public getVideoItemsByViewsV1 = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("August 17, 2021 12:00 AM +8"); //change this
+    const dateYesteryear: Date = new Date("January 25, 2024 12:00 AM +8"); //change this
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     videoItems.sort((a, b) => {
       return b.views - a.views;
