@@ -1,14 +1,49 @@
 {
   "artists": [
     {
+      "artist": "Hyunsik",
+      "debut": "Wednesday, 21 March 2012",
+      "channelID": "UC35n5Z6waD62xc-JBwmeS0w"
+    },
+    {
+      "artist": "Baby DONT Cry",
+      "debut": "Monday, 23 June 2025",
+      "channelID": "UCRjREQVSiThsjfgEGXnEBpw"
+    },
+    {
+      "artist": "Yesung",
+      "debut": "Sunday, 6 November 2005",
+      "channelID": "UC-A42LutO5qF-fuKopOGx7g"
+    },
+    {
+      "artist": "Yuju",
+      "debut": "Friday, 16 January 2015",
+      "channelID": "UCLoxAIlQjo5Hj5XxBOJ2fHg"
+    },
+    {
+      "artist": "9MUSES",
+      "debut": "Thursday, 12 August 2010",
+      "channelID": "UCJ_sOiMLKpEH39gESJCPmlw"
+    },
+    {
       "artist": "NOWZ",
       "debut": "Tuesday, 2 April 2024",
       "channelID": "UCFD41EQGXbR5JCRsvNTb9lw"
     },
     {
+      "artist": "NOIR",
+      "debut": "Monday, 9 April 2018",
+      "channelID": "UCJ1l2ADgcURHK6bbK5y8v8g"
+    },
+    {
       "artist": "ONE PACT",
       "debut": "Thursday, 30 November 2023",
       "channelID": "UCb7q-fXh21T-pq02dC9H3xg"
+    },
+    {
+      "artist": "Ciipher",
+      "debut": "Monday, 15 March 2021",
+      "channelID": "UCvvVS43k2vOjk7sR4a3xJWw"
     },
     {
       "artist": "PINKVERSE",
@@ -36,14 +71,14 @@
       "channelID": "UCZEAJDihVmamN158F3uVlNA"
     },
     {
-      "artist": "SMORZ",
-      "debut": "Monday, 19 May 2025",
-      "channelID": "UCmfwMcOSr1sgmR-bohxr3yA"
-    },
-    {
       "artist": "KIIRAS",
       "debut": "Monday, 9 June 2025",
       "channelID": "UCW8rNB6E9ykg1atcYZzozpg"
+    },
+    {
+      "artist": "SMORZ",
+      "debut": "Monday, 19 May 2025",
+      "channelID": "UCmfwMcOSr1sgmR-bohxr3yA"
     },
     {
       "artist": "LABOUM",
@@ -176,14 +211,14 @@
       "channelID": "UCTamE9g1cVy7hz4Q1bE56cQ"
     },
     {
-      "artist": "Double 0ne",
-      "debut": "Thursday, 12 June 2025",
-      "channelID": "UCFBr_RTe9eJPsISi_yPl65g"
-    },
-    {
       "artist": "Namjoo",
       "debut": "Tuesday, 19 April 2011",
       "channelID": "UC4rzKSpOMq32B0F1P9B-2KQ"
+    },
+    {
+      "artist": "Double 0ne",
+      "debut": "Thursday, 12 June 2025",
+      "channelID": "UCFBr_RTe9eJPsISi_yPl65g"
     },
     {
       "artist": "LAYSHA",
