@@ -113,14 +113,14 @@ export class apiManager {
                     //Should be publsihed within specific date
                     //use this property videoItem.contentDetails.videoPublishedAt DateTime
 
-                    const publishedDate: Date = new Date(videoItem.contentDetails.videoPublishedAt);
-                    if (databaseList.data.indexOf(videoItem.contentDetails.videoId) >= 0) {
-                      videosIDs.push(videoItem.contentDetails.videoId);
-                    } else if (acceptedDate <= publishedDate) {
-                      videosIDs.push(videoItem.contentDetails.videoId);
-                    }
+                    // const publishedDate: Date = new Date(videoItem.contentDetails.videoPublishedAt);
+                    // if (databaseList.data.indexOf(videoItem.contentDetails.videoId) >= 0) {
+                    //   videosIDs.push(videoItem.contentDetails.videoId);
+                    // } else if (acceptedDate <= publishedDate) {
+                    //   videosIDs.push(videoItem.contentDetails.videoId);
+                    // }
 
-                    // videosIDs.push(videoItem.contentDetails.videoId);
+                    videosIDs.push(videoItem.contentDetails.videoId);
                   }
                 });
                 if (!playlistItemsObject.data.nextPageToken) {
