@@ -519,7 +519,7 @@ export class DataParser {
 
   public getVideoItemsByViewsV1 = (): IVideoItems[] => {
     let videoItems: IVideoItems[] = this.getVideoItems();
-    const dateYesteryear: Date = new Date("March 22, 2021 12:00 AM +8"); //change this
+    const dateYesteryear: Date = new Date("April 5, 2023 12:00 AM +8"); //change this
     videoItems = videoItems.filter((item: IVideoItems) => new Date((new Date(item.publishedDate)).toUTCString()) >= dateYesteryear);
     videoItems.sort((a, b) => {
       return b.views - a.views;

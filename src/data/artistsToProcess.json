@@ -1,9 +1,34 @@
 {
   "artists": [
     {
+      "artist": "dodree",
+      "debut": "Wednesday, 21 January 2026",
+      "channelID": "UCDi5LcD2bYPVdA4mfaa-BKg"
+    },
+    {
+      "artist": "PINKVERSE",
+      "debut": "Friday, 30 May 2025",
+      "channelID": "UCSZTVauGKnA77Ym15ivQFgA"
+    },
+    {
+      "artist": "Minzy",
+      "debut": "Wednesday, 6 May 2009",
+      "channelID": "UCRvzFS75A4NtZvhRQAd2u0A"
+    },
+    {
+      "artist": "DAILY:DIRECTION",
+      "debut": "Monday, 23 February 2026",
+      "channelID": "UCHU0lDQyK9y17-HoROj9gWw"
+    },
+    {
       "artist": "BVNDIT",
       "debut": "Wednesday, 10 April 2019",
       "channelID": "UCNAIB6brZzCCe1QDXq0o7bQ"
+    },
+    {
+      "artist": "2Z",
+      "debut": "Sunday, 5 January 2020",
+      "channelID": "UCZEAJDihVmamN158F3uVlNA"
     },
     {
       "artist": "Youjoung",
@@ -11,9 +36,14 @@
       "channelID": "UC0rYv-5_Ce72wegF9_pmDpw"
     },
     {
-      "artist": "2Z",
-      "debut": "Sunday, 5 January 2020",
-      "channelID": "UCZEAJDihVmamN158F3uVlNA"
+      "artist": "SMORZ",
+      "debut": "Monday, 19 May 2025",
+      "channelID": "UCmfwMcOSr1sgmR-bohxr3yA"
+    },
+    {
+      "artist": "ChoCo1&2",
+      "debut": "Tuesday, 24 February 2026",
+      "channelID": "UCD1FEjgoECRQRKNyd_zKgbA"
     },
     {
       "artist": "LABOUM",
@@ -26,14 +56,19 @@
       "channelID": "UC3rue3dVkm0UYZ1tZvItIvw"
     },
     {
-      "artist": "Wooseok",
-      "debut": "Thursday, 10 September 2015",
-      "channelID": "UCT88DHBXmRo4UnrHd_QHpPg"
-    },
-    {
       "artist": "CSR",
       "debut": "Wednesday, 27 July 2022",
       "channelID": "UCVE2m6JfuhSu6dHzB_IzpFA"
+    },
+    {
+      "artist": "IDID",
+      "debut": "Monday, 15 September 2025",
+      "channelID": "UC4Jxwum4U7lwpgdyPX0NvvA"
+    },
+    {
+      "artist": "Wooseok",
+      "debut": "Thursday, 10 September 2015",
+      "channelID": "UCT88DHBXmRo4UnrHd_QHpPg"
     },
     {
       "artist": "Onew",
@@ -49,6 +84,11 @@
       "artist": "Yerin",
       "debut": "Friday, 16 January 2015",
       "channelID": "UC8ApPB1oJZSBvGi-bqSPAmg"
+    },
+    {
+      "artist": "TDYA",
+      "debut": "Friday, 15 August 2025",
+      "channelID": "UCVIS3TPjIOypcwPA6iiQjZw"
     },
     {
       "artist": "Im Do Hwa",
@@ -126,6 +166,11 @@
       "channelID": "UC4_FlqZHf6zWPyaQpmPXChQ"
     },
     {
+      "artist": "UDTT",
+      "debut": "Tuesday, 29 April 2025",
+      "channelID": "UC3zApxykkRSBYVjzF30416Q"
+    },
+    {
       "artist": "Hyoseong",
       "debut": "Tuesday, 13 October 2009",
       "channelID": "UCTamE9g1cVy7hz4Q1bE56cQ"
@@ -134,6 +179,11 @@
       "artist": "Namjoo",
       "debut": "Tuesday, 19 April 2011",
       "channelID": "UC4rzKSpOMq32B0F1P9B-2KQ"
+    },
+    {
+      "artist": "Double 0ne",
+      "debut": "Thursday, 12 June 2025",
+      "channelID": "UCFBr_RTe9eJPsISi_yPl65g"
     },
     {
       "artist": "LAYSHA",
