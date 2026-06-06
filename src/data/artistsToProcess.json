@@ -1,9 +1,19 @@
 {
   "artists": [
     {
-      "artist": "TUNEXX",
-      "debut": "Tuesday, 3 March 2026",
-      "channelID": "UCjyoasKZmVv1uHDIID04ivw"
+      "artist": "AND2BLE",
+      "debut": "Tuesday, 26 May 2026",
+      "channelID": "UCoe0BXYv01VCt0JRhX1zSug"
+    },
+    {
+      "artist": "YUHZ",
+      "debut": "Thursday, 7 May 2026",
+      "channelID": "UCc_JPb6L3IVvSVo1xoJ4TSQ"
+    },
+    {
+      "artist": "NAZE",
+      "debut": "Monday, 4 May 2026",
+      "channelID": "UC3-pYgOVYBAuuJdWAfVrtKg"
     }
   ]
 }
